@@ -1,0 +1,38 @@
+\documentclass[degree=tsxlx,bibtype=numeric,degreetype=kczy]{tongjithesis}
+
+% 其它可能用到的包
+\usepackage{tongjiutils}
+
+%参考文献更新使用biblatex包
+\addbibresource{ref/refs.bib}   
+
+\begin{document}
+
+% 定义所有的eps文件在 figures 子目录下
+\graphicspath{{figures/}}
+
+% 封面
+\frontmatter
+\input{data/cover}
+\makecover
+
+% 目录
+\tableofcontents
+
+% 正文 
+\mainmatter
+\include{data/chap01}
+\include{data/chap02}
+\include{data/chap03}
+\include{data/chap04}
+\include{data/chap05}
+
+% 致谢
+\begin{acknowledgement}
+\input{data/ack}
+\end{acknowledgement}
+
+% 参考文献
+\printTJbibliography
+
+\end{document}
