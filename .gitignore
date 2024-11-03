@@ -12,5 +12,5 @@
 !ref
 !ref/*
 !code
-!code/*
+!code/**
 !*.md
