@@ -6,8 +6,11 @@
 !*.cls
 !*.cfg
 !figures
+!figures/*
 !data
+!data/*
 !ref
+!ref/*
 !code
 !code/**
 !*.md
